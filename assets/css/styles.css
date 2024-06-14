@@ -635,6 +635,7 @@ body {
   .about-text {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 14px;
   }
 }
 
@@ -662,11 +663,17 @@ body {
   width: 100%;
   height: 400px;
 }
+@media (max-width: 768px) {
+  .video-container {
+    background: black;
+  }
+}
 @media (max-width: 480px) {
   .video-container {
     height: 200px;
   }
 }
+
 .video-container::after {
   content: "";
   position: absolute;
@@ -689,12 +696,11 @@ body {
   grid-area: 1 / 1;
   object-fit: cover;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .video-container video {
-    height: 200px;
+    display: none;
   }
 }
-
 .text-overlay {
   color: white;
   font-size: 48px;
@@ -705,6 +711,11 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  .text-overlay {
+    font-size: 32px;
+  }
 }
 .parent {
   display: grid;
@@ -913,6 +924,7 @@ body {
 }
 .other-cases-item p {
   padding: 15px 0;
+  font-size: 22px;
 }
 
 /* Heritage */
