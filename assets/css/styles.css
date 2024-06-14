@@ -866,6 +866,11 @@ body {
   padding-bottom: 100px;
   padding: 50px 0;
 }
+@media (max-width: 480px) {
+  .footnote {
+    padding: 25px 0;
+  }
+}
 .footnote-line {
   width: 50%;
   position: relative;
@@ -880,7 +885,8 @@ body {
   left: 15px;
   width: 40px;
   height: 40px;
-  background: url("/assets/img/cases/bakili-icon.png") no-repeat center center;
+  background: url("../../assets/img/cases/bakili-icon.png") no-repeat center
+    center;
   transform: translate(-50%, -50%);
 }
 .footnote-text {
@@ -999,8 +1005,10 @@ body {
 .footnote-text-heritage {
   color: black;
 }
-.footnote-heritage {
-  background-color: #faf7f4;
+@media (max-width: 768px) {
+  .footnote-text-heritage {
+    padding-left: 45px;
+  }
 }
 .main-header-gmt {
   background-image: url("/assets/img/cases/GMT_arena_header.png"),
