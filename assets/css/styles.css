@@ -834,7 +834,11 @@ body {
   transition: opacity 0.3s ease;
   padding: 40px;
 }
-
+@media (max-width: 480px) {
+  .image-container .overlay {
+    align-items: center;
+  }
+}
 .image-container:hover .overlay {
   opacity: 1;
   transform: translate(0, 0) rotate(0);
@@ -986,7 +990,7 @@ body {
 
 /* Heritage */
 .main-header-heritage {
-  background-image: url("/assets/img/cases/herytage_header.png"),
+  background-image: url("../../assets/img/cases/herytage_header.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 .footnote-line-heritage {
@@ -999,8 +1003,17 @@ body {
   left: 15px;
   width: 36px;
   height: 60px;
-  background: url("/assets/img/cases/heritage_icon.png") no-repeat center center;
+  background: url("../../assets/img/cases/heritage_icon.png") no-repeat center
+    center;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .footnote-line-heritage::before {
+    background: url("../../assets/img/cases/heritage_icon-sm.png") no-repeat
+      center center;
+    top: 15px;
+    left: 9px;
+  }
 }
 .footnote-text-heritage {
   color: black;
@@ -1011,7 +1024,7 @@ body {
   }
 }
 .main-header-gmt {
-  background-image: url("/assets/img/cases/GMT_arena_header.png"),
+  background-image: url("../../assets/img/cases/GMT_arena_header.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 .footnote-line-gmt {
@@ -1024,9 +1037,16 @@ body {
   left: 15px;
   width: 55px;
   height: 70px;
-  background: url("/assets/img/cases/GMT_Arena_icon.png") no-repeat center
+  background: url("../../assets/img/cases/GMT_Arena_icon.png") no-repeat center
     center;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .footnote-line-gmt::before {
+    background: url("../../assets/img/cases/GMT_Arena_icon-sm.png") no-repeat
+      center center;
+    left: 10px;
+  }
 }
 
 /* Contact */
