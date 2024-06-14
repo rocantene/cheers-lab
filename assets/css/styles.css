@@ -450,11 +450,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .main-header {
+    height: 200px;
+  }
+}
 .main-title {
   color: rgb(0, 0, 0);
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
+}
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 32px;
+  }
 }
 .article-img img {
   width: 100%;
@@ -847,7 +857,7 @@ body {
   background-color: black;
 }
 .main-header-bakili {
-  background-image: url("/assets/img/cases/bakali_header.png"),
+  background-image: url("../../assets/img/cases/bakali_header.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 .footnote {
@@ -881,11 +891,21 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .footnote-text {
+    font-size: 12px;
+    padding-left: 0;
+  }
 }
 .bakili-wrapper {
   padding: 50px 60px 50px 60px;
+}
+@media (max-width: 480px) {
+  .bakili-wrapper {
+    padding: 50px 20px 50px 20px;
+  }
 }
 .case-section img {
   width: 100%;
@@ -898,23 +918,53 @@ body {
   font-weight: 400;
   line-height: 47px;
 }
+@media (max-width: 768px) {
+  .other-cases {
+    font-size: 32px;
+  }
+}
 .other-cases-section {
   display: flex;
   justify-content: space-around;
-  gap: 100px;
-  padding-top: 45px;
+  gap: 30px;
+  padding-top: 25px;
+}
+@media (max-width: 768px) {
+  .other-cases-section {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .other-cases-section {
+    flex-wrap: wrap;
+  }
 }
 .other-cases-item {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  background-color: #fff;
+  align-items: center;
+  justify-content: center;
 }
-.other-cases-item:hover {
+@media (max-width: 768px) {
+  .other-cases-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .other-cases-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+} */
+.other-cases-item:hover p {
   color: #006cff;
 }
 .other-cases-item img {
@@ -923,6 +973,7 @@ body {
   height: 100%;
 }
 .other-cases-item p {
+  color: #000;
   padding: 15px 0;
   font-size: 22px;
 }
