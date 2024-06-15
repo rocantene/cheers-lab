@@ -293,11 +293,18 @@ body {
 @media (max-width: 900px) {
   .main-logo-wrapper {
     position: relative;
+    height: 400px;
     width: 100%;
   }
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .main-logo-wrapper {
+    height: 200px;
+  }
+} */
+@media (max-width: 480px) {
+  .main-logo-wrapper {
+    height: 200px;
   }
 }
 .main-img {
