@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +29,7 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>CheersLab</title>
+    <title>CheersLab - Creative agency</title>
   </head>
   <body>
     <div class="container" id="container">
@@ -44,7 +61,7 @@
                     target="_blank"
                   >
                     <svg
-                      class="icon"
+                      class="socials-items-icon"
                       width="15.000488"
                       height="15.003235"
                       viewBox="0 0 15.0005 15.0032"
@@ -83,7 +100,7 @@
                 <li class="socials-items">
                   <a href="#">
                     <svg
-                      class="icon"
+                      class="socials-items-icon"
                       width="8.000000"
                       height="15.406250"
                       viewBox="0 0 8 15.4062"
@@ -106,7 +123,7 @@
                 <li class="socials-items">
                   <a href="#">
                     <svg
-                      class="icon"
+                      class="socials-items-icon"
                       width="13.803711"
                       height="13.779907"
                       viewBox="0 0 13.8037 13.7799"
@@ -151,7 +168,7 @@
           <div class="reserved">
             <img src="./assets/img/bg-menu.svg" alt="" />
             <p>
-              ©2024 CHEERS LAB <br />
+              &copy; 2024 CHEERS LAB <br />
               All rights reserved
             </p>
           </div>
@@ -163,34 +180,31 @@
             <source src="./assets/video/cheers_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div class="video-overlay">
-            <button class="play-button" id="play-button"></button>
-          </div>
+          <button class="play-button" id="play-button"></button>
         </div>
       </section>
-
       <section class="articles" id="articles">
         <div class="articles-wrapper">
-          <a class="image-link" href="articles/ii-articles.html">
+          <a class="articles-image-link" href="articles/ii-articles.html">
             <img
-              class="cases-img"
+              class="articles-image"
               src="./assets/img/ii-article.png"
-              alt="Aller Retour"
+              alt="ii article"
             />
-            <div class="article-overlay">
+            <div class="articles-overlay">
               <div class="articles-title">How we use AI in our projects</div>
               <div class="articles-date">Article</div>
             </div>
           </a>
         </div>
         <div class="articles-wrapper">
-          <a class="image-link" href="./pages/cases/bakili.html">
+          <a class="articles-image-link" href="./pages/cases/bakili.html">
             <img
-              class="cases-img"
+              class="articles-image"
               src="./assets/img/bakili-article.png"
-              alt="Aller Retour"
+              alt="Bakili"
             />
-            <div class="article-overlay">
+            <div class="articles-overlay">
               <div class="articles-title">Cheers x Bakili</div>
               <div class="articles-date">Case</div>
             </div>
@@ -198,13 +212,13 @@
         </div>
 
         <div class="articles-wrapper">
-          <a class="image-link" href="./pages/cases/heritage.html">
+          <a class="articles-image-link" href="./pages/cases/heritage.html">
             <img
-              class="cases-img"
+              class="articles-image"
               src="./assets/img/cases/heritage_frame_1.png"
-              alt="Aller Retour"
+              alt="Heritage"
             />
-            <div class="article-overlay">
+            <div class="articles-overlay">
               <div class="articles-title">Cheers x Heritage</div>
               <div class="articles-date">Case</div>
             </div>
@@ -212,32 +226,18 @@
         </div>
 
         <div class="articles-wrapper">
-          <a class="image-link" href="./pages/cases/gmt.html">
+          <a class="articles-image-link" href="./pages/cases/gmt.html">
             <img
-              class="cases-img"
+              class="articles-image"
               src="./assets/img/cases/GMT_Arena_frame_1.png"
-              alt="Aller Retour"
+              alt="GMT Arena"
             />
-            <div class="article-overlay">
+            <div class="articles-overlay">
               <div class="articles-title">Cheers x GMT Arena</div>
               <div class="articles-date">Case</div>
             </div>
           </a>
         </div>
-
-        <!-- <div class="articles-wrapper">
-          <div class="articles-item">
-            <a class="articles-link" href="./pages/cases/gmt.html">
-              <img
-                class="articles-img"
-                src="./assets/img/cases/GMT_Arena_frame_1.png"
-                alt="GMT Arena"
-              />
-            </a>
-            <span class="articles-date">Case</span>
-            <h3 class="articles-title"><a href="#">Cheers x GMT Arena</a></h3>
-          </div>
-        </div> -->
       </section>
       <footer class="main-footer">
         <img src="./assets/img/bg-menu.svg" alt="" />
