@@ -298,8 +298,6 @@ body {
 }
 @media (max-width: 576px) {
   .main-logo-wrapper {
-    padding: 40px 100px;
-    height: auto;
   }
 }
 .main-img {
