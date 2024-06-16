@@ -14,6 +14,9 @@ body {
 .open {
   display: flex !important;
 }
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 .container {
   display: flex;
 }
@@ -745,7 +748,7 @@ body {
 }
 @media (max-width: 480px) {
   .footnote {
-    padding: 25px 0;
+    padding-bottom: 0;
   }
 }
 .footnote-line {
@@ -923,8 +926,8 @@ body {
 .footnote-line-aller::before {
   content: "";
   position: absolute;
-  top: -15px;
-  left: -10px;
+  top: -16px;
+  left: 15px;
   width: 35px;
   height: 40px;
   background: url("../../assets/img/cases/aller_icon.png") no-repeat center
